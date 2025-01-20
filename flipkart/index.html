@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Flipkart</title>
+    <link rel="icon" href="flipkart\image\a.png">
+    <script src="https://kit.fontawesome.com/4731820ae8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        function updateDataForMultipleElements() {
+          $('[data-content]').each(function() {
+            const id = this.id;
+            const content = $(this).data('content');
+            $('#' + id).text(content);
+          });
+        }
+    
+        window.addEventListener("scroll", function(e) {
+          let { clientHeight, scrollHeight, scrollTop } = e.target.documentElement;
+          if (clientHeight + scrollTop + 1 >= scrollHeight) {
+            updateDataForMultipleElements();
+          }
+        });
+      });
+    </script>
+  </head>
+
+
+
+  <body class="bg-body-secondary">
+    
+      <header>
+      <div class="container-fluid fixed-top d-flex justify-content-evenly p-2 " style="background-color: #2874F0; ">
+        <a class="lh-sm btn-sm btn btn-transparent" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fa fa-bars" style="color: white;"></i>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header container-fluid" style="background-color: #2874F0;">
+            <h1 class="offcanvas-title text-white"  id="offcanvasExampleLabel">
+              <i class="fa-solid fa-square-list"></i>categories</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body container text-center">
+                <div class="d-flex flex-column text-white link-light" style="background-color: #2874F0;"><p><small>
+                <div class="row"><a href="#" class="link-light"><i class="fa fa-shopping-basket"></i>Grocery</a></div>
+                <hr><div class="row"><a href="#" class="link-light"><i class="fa fa-mobile-phone"> </i>Mobiles</a></div>
+                <hr><div class="dropdown">
+                  
+                  <button class="text-light btn btn-transparent dropdown-toggle" href="#" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class='fa fa-user-tie'></i>Fashion
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      men's top wear
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>More in men's top wear</p>
+                      <a class="dropdown-item" href="#">All</a>
+                      <a class="dropdown-item" href="#">Men's T-shirt </a>
+                      <a class="dropdown-item" href="#">Men's Casual Shirt</a>
+                    </div>
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      men's top wear
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>More in men's top wear</p>
+                      <a class="dropdown-item" href="#">All</a>
+                      <a class="dropdown-item" href="#">Men's T-shirt </a>
+                      <a class="dropdown-item" href="#">Men's Casual Shirt</a>
+                    </div>
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      men's top wear
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>More in men's top wear</p>
+                      <a class="dropdown-item" href="#">All</a>
+                      <a class="dropdown-item" href="#">Men's T-shirt </a>
+                      <a class="dropdown-item" href="#">Men's Casual Shirt</a>
+                    </div>
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      men's top wear
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>More in men's top wear</p>
+                      <a class="dropdown-item" href="#">All</a>
+                      <a class="dropdown-item" href="#">Men's T-shirt </a>
+                      <a class="dropdown-item" href="#">Men's 3Casual Shirt</a>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="text-light btn btn-transparent dropdown-toggle" href="#" type="button" data-toggle="dropdown"   aria-expanded="false">
+                    <i class="fa-solid fa-microchip"></i>electronics
+                  </div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      Veiw All
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>Veiw all in Fashion</p>
+                      <a class="dropdown-item" href="#">Mobiles</a>
+                      <a class="dropdown-item" href="#">Tablet</a>
+                    </div>
+                  </div>
+                  <hr><a class="text-light btn btn-transparent dropdown-toggle" href="#" type="button" data-toggle="dropdown"   aria-expanded="false">
+                    <i class="fa-solid fa-house"></i> Home and Furniture
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      Veiw All
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>Veiw all in Fashion</p>
+                      <a class="dropdown-item" href="#">Mobiles</a>
+                      <a class="dropdown-item" href="#">Tablet</a>
+                    </div>
+                  </div>
+                 <hr> <a href="#" class="link-light" ><i class="fa-solid fa-blender-phone"></i>Appliances</a>
+                 <hr> <a href="#" class="link-light" ><i class="fa-solid fa-plane"></i>Travel</a>
+                 <hr> <a href="#" class="link-light" ><i class="fa-solid fa-gift"></i>Top Offers</a>
+                  <hr><button class="text-light btn btn-transparent dropdown-toggle" href="#" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-teddy-bear"></i>Beauty toys and More<i class="fa-solid fa-dreidel"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      Veiw All
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>Veiw all in Fashion</p>
+                      <a class="dropdown-item" href="#">Mobiles</a>
+                      <a class="dropdown-item" href="#">Tablet</a>
+                    </div>
+                  </div>
+                  <hr><a class="text-light btn btn-transparent dropdown-toggle" href="#" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-motorcycle"></i>Two Wheelers
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item dropdown-toggle" href="#" type="button" data-toggle="dropdown"  aria-expanded="false">
+                      Veiw All
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                      <p>Veiw all in Fashion</p>
+                      <a class="dropdown-item" href="#">Mobiles</a>
+                      <a class="dropdown-item" href="#">Tablet</a>
+                    </div>
+                  </div>
+                </div>
+                
+              
+              </p></small></div>
+              <br>
+              
+            
+
+          </div>
+        </div>
+          <div class="navbar-brand d-flex flex-column me-2">
+            <img src="image/logo.png" width="80px" alt="Logo" class="align-text-top">
+            <b><i><p class="text-light">Explore <span style="color: gold;">Plus</span></p></i></b>
+          </div>
+            <form role="search" class="input-group co;-md-4">
+            <input class="form-control d-inline-block" style="width: auto;" type="search" placeholder="Search for products" aria-label="Search">
+            <button class="btn bg-white" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+           <p><a href="#" class="text-white lh-sm"><b>Become a Seller</b></a></p>
+
+          <div class="dropdown">
+            <button class="btn text-light lh-sm btn-sm" style="background-color:#2874F0" type:"button" data-bs-toggle="dropdown" aria-expanded="true">
+              <p><b>MORE</b></p>
+            </button>
+            <div class="dropdown-menu"  style="background-color:#ffffff">
+              <li><a class="dropdown-item" href="#"><i class="fa fa-bell"></i>Notification Preferences</a>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i>Customer Service</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-rectangle-ad"></i>Advertise </a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-download"></i>Download App</a></li>
+              </div>
+          </div>
+            <a href="#"><b><p class="text-white lh-sm"><i class="fa fa-shopping-cart"></i>
+              CART</p></b></a>
+              <button class="btn btn-sm text-light lh-sm" style="background-color:#2874F0" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                <p><b>LOGIN</b></p>
+              </button>
+
+            </div>
+      </header>
+
+
+<br><br><br><br>
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="image/c (1).png" class="d-block w-100" alt="image/c (1).png">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Gift for your Loved ones</h5>
+        <p>Sale starting from 22 july</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="image/c (2).png" class="d-block w-100" alt="image/c (2).png">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fly Smart Save Smartter</h5>
+        <p>Indigigo International flights starting at ₹20,0000</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="image/c (3).png" class="d-block w-100" alt="image/c (3).png">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>discounton Departure</h5>
+        <p>Domestic flights Sale upto 55%</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="image/c (4).png" class="d-block w-100" alt="image/c (4).png">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Samgung 32" Smart TV</h5>
+        <p>Just ₹9,999</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+<div class="container-fluid bg-white text-center my-3 py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card" style="border-radius: 10px; position: relative;">
+          <img class="card-image opacity-25" src="image/back.jpg" alt="Background Image">
+          <div class="card-body" style="position: absolute; bottom: 20px; left: 20px; color: #fff;">
+            <h2 class="card-title text-danger bg-warning">Scratch</h2>
+            <h5 class="card-text text-warning bg-danger">and find latest Offers</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-container col-md-3 col-sm-6 col-10 mb-4">
+        <img class="card-image" src="image/scratch.jpg" alt="Background Image">
+        <div class="overlay"></div>
+        <a href="#"><div class="card-content">
+          <img src="image/axis.jpg" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+          <h5>10% INSTANT DISCOUNT</h5>
+          <p>ON CREDIT AND DEBIT CARDS</p>
+        </div></a>
+      </div>
+      
+      <div class="card-container col-md-3 col-sm-6 col-10 mb-4">
+        <img class="card-image" src="image/scratch.jpg" alt="Background Image">
+        <div class="overlay"></div>
+        <a href="#"><div class="card-content">
+          <img src="image/hdfc.png" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+          <h5>₹1000 INSTANT DISCOUNT</h5>
+          <p>ON CREDIT CARDS</p>
+        </div></a>
+      </div>      
+      <div class="card-container col-md-3 col-sm-6 col-10 mb-4">
+        <img class="card-image" src="image/scratch.jpg" alt="Background Image">
+        <div class="overlay"></div>
+        <a href="#"><div class="card-content">
+          <img src="image/collection.jpeg" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+          <h5>15% INSTANT DISCOUNT</h5>
+          <p>On Collection Purchases</p>
+        </div></a>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+  </div>
+<div class="d-flex flex-column">
+  <div class="container-fluid bg-white mt-3 pt-4 text-start" id="ele1" data-content="Data for ele 1">
+        <div class="row d-flex">
+            <a href="#" style="color: black;"><b><h3>Top Offers</h3></b>
+            <button type="button" class="btn btn-primary btn-sm btnr" style="position: relative; top:-32px; left:-10px; float: right;">></button></a>
+        </div>
+        <div id="Carousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (1).png" alt="Image/to (1).png1">
+                      <div class="card-body">
+                        <p class="card-title">apple ipads</p>
+                       <b><p class="card-text">Shop Now!<b></b></p></b> 
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (2).png" alt="Image/to (2).png2">
+                      <div class="card-body">
+                        <p class="card-title">moto e13</p>
+                        <p class="card-text"><b>from 7,999*</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (3).png" alt="Image/to (3).png3">
+                      <div class="card-body">
+                        <p class="card-title">Printer</p>
+                        <p class="card-text"><b>Upto 70% off</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (4).png" alt="Image/to (1).png4">
+                      <div class="card-body">
+                        <p class="card-title">Purifier</p>
+                        <p class="card-text"><b>Order Now!</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (5).png" alt="Image/to (5).png5">
+                      <div class="card-body">
+                        <p class="card-title">Water bottle</p>
+                        <p class="card-text"><b> From ₹119</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (6).png" alt="Image/to (6).png6">
+                      <div class="card-body">
+                        <p class="card-title">Moto G73</p>
+                        <p class="card-text"><b>incl of offers</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>
+          <a class=" carousel-control-prev" href="#Carousel1" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a></button>
+          <button>
+          <a class=" carousel-control-next" href="#Carousel1" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="container-fluid bg-white d-flex pt-4 my-3" id="ele2" data-content="Data for ele 2">
+      <div class="container w-75 px-3 text-start">
+        <div class="row d-flex">
+            <a href="#" style="color: black;"><b><h3>Top Offers</h3></b>
+            <button type="button" class="btn btn-primary btn-sm btnr" style="position: relative; top:-32px; left:-10px; float: right;">></button></a>
+        </div>
+        <div id="Carousel2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w1000 text-center" style="color: black;">
+                      <img src="image/to (1).png" alt="Image/to (1).png1">
+                      <div class="card-body">
+                        <p class="card-title">apple ipads</p>
+                       <b><p class="card-text">Shop Now!<b></b></p></b> 
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (2).png" alt="Image/to (2).png2">
+                      <div class="card-body">
+                        <p class="card-title">moto e13</p>
+                        <p class="card-text"><b>from 7,999*</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (3).png" alt="Image/to (3).png3">
+                      <div class="card-body">
+                        <p class="card-title">Printer</p>
+                        <p class="card-text"><b>Upto 70% off</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (4).png" alt="Image/to (1).png4">
+                      <div class="card-body">
+                        <p class="card-title">Purifier</p>
+                        <p class="card-text"><b>Order Now!</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (5).png" alt="Image/to (5).png5">
+                      <div class="card-body">
+                        <p class="card-title">Water bottle</p>
+                        <p class="card-text"><b> From ₹119</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                  <div class="col-md-4"><a href="#">
+                    <div class="card w-100 text-center" style="color: black;">
+                      <img src="image/to (6).png" alt="Image/to (6).png6">
+                      <div class="card-body">
+                        <p class="card-title">Moto G73</p>
+                        <p class="card-text"><b>incl of offers</b></p>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#Carousel2" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class=" carousel-control-next" href="#Carousel2" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+      <div class="container mx-3 mb-3 w-25 px-1">
+        <a href="#"><img src="image/w-25.png " class="img-responsive w-40" alt="rs"> </a>
+      </div>
+    </div>
+    <div class="container-fluid bg-white text-center" id="ele3" data-content="Data for ele 3">
+      <div class="row my-3 justify-content-center">
+        <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+          <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+          <div class="overlay"></div>
+          <a href="#"><div class="card-content" style="opacity: 1;">
+            <img src="https://png.pngtree.com/png-vector/20210508/ourmid/pngtree-air-conditioner-with-cold-wind-effect-png-image_3267128.jpg" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h5>Energy Saving Ac</h5>
+            <p>starting From ₹50,000</p>
+          </div></a>
+        </div>      
+        <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+          <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+          <div class="overlay"></div>
+          <a href="#"><div class="card-content" style="opacity: 1;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3FAf5fozqn6UiXgv3Z5qyToZPtcEhHNVOQT4MB0t2&s" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h5>Power Saving Cooler</h5>
+            <p>₹2,000 to ₹15,000</p>
+          </div></a>
+        </div>      
+        <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+          <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+          <div class="overlay"></div>
+          <a href="#"><div class="card-content" style="opacity: 1;">
+            <img src="https://www.vhv.rs/dpng/d/431-4314078_red-vacuum-cleaner-png-image-with-transparent-background.png" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h5>Powerful vacuum-cleaners</h5>
+            <p>Eureka, Karcher and More</p>
+          </div></a>
+        </div>
+    </div>
+  </div> 
+<div class="d-flex container-fluid bg-white my-3 py-3" id="ele4" data-content="Data for ele 4">
+  <div class="container w-50">
+  <a href="#"><img src="image/r.png " class="img-responsive" alt="rs"></a></div>
+  <div class="container d-flex flex-column w-50">
+    <div class="row">
+      <a href="#" style="color: black;"><b><h3>Top Deals In Sports</h3></b>
+      <button type="button" class="btn btn-primary btn-sm btnr" style="position: relative; top:-32px; left:-10px; float: right;">></button></a>
+  </div>
+  <div class="row">
+    <div class="col-6"><a href="#">
+      <div class="card w1000 text-center" style="color: black;">
+        <img src="image/sp (1).png" alt="Image/sp (1).png1">
+        <div class="card-body">
+          <p class="card-title">Sale</p>
+         <b><p class="card-text">Up To 50% off<b></b></p></b> 
+        </div>
+      </div>
+    </a></div>
+    <div class="col-6"><a href="#">
+      <div class="card w1000 text-center" style="color: black;">
+        <img src="image/sp (2).png" alt="Image/sp (2).png1">
+        <div class="card-body">
+          <p class="card-title">Sale</p>
+         <b><p class="card-text">Fron ₹199<b></b></p></b> 
+        </div>
+      </div>
+    </a></div>
+  </div>
+  <div class="row">
+    <div class="col-6"><a href="#">
+      <div class="card w1000 text-center" style="color: black;">
+        <img src="image/sp (3).png" alt="Image/sp (1).png1">
+        <div class="card-body">
+          <p class="card-title">Sale</p>
+         <b><p class="card-text"><del>₹1510</del>₹998<b></b></p></b> 
+        </div>
+      </div>
+    </a></div>
+    <div class="col-6"><a href="#">
+      <div class="card w1000 text-center" style="color: black;">
+        <img src="image/sp (4).png" alt="Image/sp (1).png1">
+        <div class="card-body">
+          <p class="card-title">Sale</p>
+         <b><p class="card-text">₹399 Only<b></b></p></b> 
+        </div>
+      </div>
+    </a></div>
+  </div>
+  </div></div>
+</div>
+<div class="container-fluid bg-white text-center" id="ele5" data-content="Data for ele 5">
+  <div class="row my-3 justify-content-center">
+    <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+      <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+      <div class="overlay"></div>
+      <a href="#"><div class="card-content" style="opacity: 1;">
+        <img src="https://www.pngmart.com/files/7/LED-Television-Transparent-Background.png" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h5>EnVisionX Google TV</h5>
+        <p>Future of Entertainment Today</p>
+      </div></a>
+    </div>      
+    <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+      <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+      <div class="overlay"></div>
+      <a href="#"><div class="card-content" style="opacity: 1;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbLMS1YjBzfAZOBg97jn-pl8W9ekMR0b8i4v5XSvl_Ag&s" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h5>All in One Trimmer</h5>
+        <p>Starting from ₹549</p>
+      </div></a>
+    </div>      
+    <div class="card-container col-md-4 col-sm-6 col-10 mb-4">
+      <img class="card-image" src="image/back.jpg" style="opacity: 0.5; z-index: -1;" alt="Background Image">
+      <div class="overlay"></div>
+      <a href="#"><div class="card-content" style="opacity: 1;">
+        <img src="https://w7.pngwing.com/pngs/469/1004/png-transparent-mixer-juicer-havells-home-appliance-grinding-machine-mixer-grinder-kitchen-kitchen-appliance-lid-thumbnail.png" alt="Foreground Image" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h5>Juicera, Mixers and Grinders</h5>
+        <p>Philips, Bajaj and More</p>
+      </div></a>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid my-3 bg-white text-start" id="ele6" data-content="Data for ele 6">
+  <div class="row p-3" style="color: black;">
+      <b><h3>Featured Brands</h3></b>
+  </div>
+  <div id="Carousel3" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4"><a href="#">
+              <div class="card w1000 text-center" style="color: black;">
+                <img src="image/fb (1).png" alt="Image/fb (1).png1">
+                <div class="card-body">
+                  <p class="card-title d-inline">JBL PARTY BOXES</p>
+                 <b><p class="card-text d-inline">From 19,999<b></b></p></b> 
+                </div>
+              </div>
+            </div></a>
+            <div class="col-md-4"><a href="#">
+              <div class="card w-100 text-center" style="color: black;">
+                <img src="image/fb (2).png" alt="Image/fb (2).png2">
+               <div class="card-body">
+                 <b><p class="card-title d-inline">Just ₹1,299</p></b> 
+                </div>
+              </div>
+            </div></a>
+            <div class="col-md-4"><a href="#">
+              <div class="card w-100 text-center" style="color: black;">
+                <img src="image/fb (3).png" alt="Image/fb (3).png3">
+               <div class="card-body">
+                 <b><p class="card-text d-inline">From 16,999</p></b> 
+                </div>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4"><a href="#">
+              <div class="card w-100 text-center" style="color: black;">
+                <img src="image/fb (4).png" alt="Image/fb (1).png4">
+               <div class="card-body">
+                  <b><p class="card-text d-inline">Min 50% Off</p></b> 
+                </div>
+              </div>
+            </div></a>
+            <div class="col-md-4"><a href="#">
+              <div class="card w-100 text-center" style="color: black;">
+                <img src="image/fb (5).png" alt="Image/fb (5).png5">
+               <div class="card-body">
+                  <b><p class="card-text d-inline">Up To 50% Off</p></b> 
+                </div>
+              </div>
+            </div></a>
+            <div class="col-md-4"><a href="#">
+              <div class="card w-100 text-center" style="color: black;">
+                <img src="image/fb (6).png" alt="Image/fb (6).png6">
+               <div class="card-body">
+                  <b><p class="card-text d-inline"><del>₹50,000</del> ₹12,999<b></b></p></b> 
+                </div>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#Carousel3" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class=" carousel-control-next" href="#Carousel3" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+<div class="container-fluid bg-white text-center" id="ele7" data-content="Data for ele 7">
+  <div class="row my-3 justify-content-center">
+    <div class="col-md-2">
+      <div class="card bg-image" style="background-image: url('image/sand.jpg');">
+        <a href="#"><div class="d-flex align-items-center border border-warning border-5 justify-content-center rounded-circle" style="background-color: #E34C68;">
+        <span class="text-center" style="color: #FFF3E9;"><h1>Under</h1><br><h1>₹199</h1></span>
+        </div></a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card bg-image" style="background-image: url('image/sand.jpg');">
+        <a href="#"><div class="d-flex align-items-center border border-warning border-5 justify-content-center rounded-circle" style="background-color: #E34C68;">
+        <span class="text-center" style="color: #FFF3E9;"><h1>Under</h1><br><h1>₹299</h1></span>
+        </div></a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card bg-image" style="background-image: url('image/sand.jpg');">
+        <a href="#"><div class="d-flex align-items-center border border-warning border-5 justify-content-center rounded-circle" style="background-color: #E34C68;">
+        <span class="text-center" style="color: #FFF3E9;"><h1>Under</h1><br><h1>₹499</h1></span>
+        </div></a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card bg-image" style="background-image: url('image/sand.jpg');">
+        <a href="#"><div class="d-flex align-items-center border border-warning border-5 justify-content-center rounded-circle" style="background-color: #E34C68;">
+          <span class="text-center" style="color: #FFF3E9;"><h1>Under</h1><br><h1>₹599</h1></span>
+        </div></a>
+      </div>
+    </div>
+</div>
+</div>
+  </div> 
+    <br>
+     <footer style="background-color: white;">
+      <hr><br><br>
+      <div class="row text-muted text-start mx-4">
+    <div class="container"><span style:"font-size:14px;">Top Stories</span>:
+      <a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" tabindex="-1" aria-disabled="true" href="#" >Brand Directory</a><br><br>
+      <div><span style:"font-size:14px;">Most searched for on Flipkart:</span>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/q/one-pieces?otracker=undefined_footer_footer" disabled>One Pieces</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/fashion-eoss-trendy-june23-sale-store?otracker=undefined_footer_footer">Fashion EOSS Sale</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/trend-stop-23-store?otracker=undefined_footer_footer">Trend Stop</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/superelite-credit-card-store?otracker=undefined_footer_footer">Flipkart Axis Bank Super Elite Credit card</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/5g-mobile-phones-store?otracker=undefined_footer_footer">5G Mobile Phones</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/primebook-laptop-store?otracker=undefined_footer_footer">Primebook Laptops</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/motorola-edge-40-jet-black-256-gb/p/itmbe5b18bf1f229?otracker=undefined_footer_footer">Moto Edge 40</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/vehicles/bikes-scooters/bounce-infinity~brand/pr?sid=7dk,0aj&amp;otracker=undefined_footer_footer">Bounce Infinity E1</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/q/buy-laptop-on-emi?otracker=undefined_footer_footer">Buy Laptop on EMI</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/infinix-zero-book-store?otracker=undefined_footer_footer">Infinix Zero Book Ultra</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/oppo-reno8-5g-shimmer-gold-128-gb/p/itmba1bc0bf67ccc?otracker=undefined_footer_footer">OPPO Reno8 5G</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/oppo-reno8-pro-5g-glazed-green-256-gb/p/itm30b1eb50ca71f?otracker=undefined_footer_footer">OPPO Reno8 Pro 5G</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/home-decor/flowers-vases/fresh-flowers/pr?sid=arb,g0v,wfl&amp;otracker=undefined_footer_footer">Fresh Flower Bouquet</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/sports/cycling/electric-cycle/pr?sid=abc,ulv,twp&amp;otracker=undefined_footer_footer">Electric Cycles</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/sports/badminton/pr?sid=abc%2Cegs&amp;otracker=undefined_footer_footer">Badminton</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/q/bouquets?otracker=undefined_footer_footer">Bouquet</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/laptop-repair-service-store?otracker=undefined_footer_footer">Laptop Repair Services</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/ac-cleaning-service-store?otracker=undefined_footer_footer">AC Cleaning Services</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/computers/computer-components/monitors/oneplus~brand/pr?sid=6bo,g0i,9no&amp;otracker=undefined_footer_footer">Oneplus Monitors</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/pages/grievance-redressal-mechanism?otracker=undefined_footer_footer">Grievance Redressal</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/mobile-repair-service-store?otracker=undefined_footer_footer">Mobile Repair Services</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/sell-back-store?otracker=undefined_footer_footer">Sell Old Mobile Phones</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/q/premium-laptops?otracker=undefined_footer_footer">Premium Laptops</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/flipkart-electronics-new-store?otracker=undefined_footer_footer">Electronics Store</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/mobile-accessories/cases-and-covers/pr?sid=tyy,4mr,q2u&amp;otracker=undefined_footer_footer">Phone cover</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined_footer_footer">Infinix INBook Y1 Plus</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/vehicles/bikes-scooters/okaya~brand/pr?sid=7dk,0aj&amp;otracker=undefined_footer_footer">Okaya Electric Vehicles</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/vehicles/bikes-scooters/bgauss~brand/pr?sid=7dk,0aj&amp;otracker=undefined_footer_footer">bgauss electric scooter</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/oppo-reno7-pro-5g-startrails-blue-256-gb/p/itm9a6b0ca45fe90?otracker=undefined_footer_footer">OPPO Reno7 Pro 5G</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/apple-iphone-13-pink-128-gb/p/itm6e30c6ee045d2?otracker=undefined_footer_footer">iPhone 13</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/apple-iphone-13-pro-graphite-512-gb/p/itm5c4ef35fbe69f?otracker=undefined_footer_footer">iPhone 13 Pro</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/apple-iphone-13-pro-max-sierra-blue-128-gb/p/itm5ede69d71530a?otracker=undefined_footer_footer">iPhone 13 Pro Max</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/apple-iphone-13-mini-starlight-128-gb/p/itmcb65606f21fd3?otracker=undefined_footer_footer">iPhone 13 Mini</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/google-bumper-case-pixel-6a/p/itm4aa7b3216aeb9?otracker=undefined_footer_footer">Google Pixel 6a covers</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/flipkartquick-hyperlocal-campaign-store?otracker=undefined_footer_footer">Flipkart Quick</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/vehicles/bikes-scooters/ampere~brand/pr?sid=7dk,0aj&amp;otracker=undefined_footer_footer">Ampere Magnus</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/helpcentre?otracker=undefined_footer_footer">Flipkart Help Centre</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/boat-online-store?otracker=undefined_footer_footer">Online Boat Store</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/q/buy-covers-from-rs-99?otracker=undefined_footer_footer">Covers from Rs 99</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/helpcentre/trackOrder/i/2?otracker=undefined_footer_footer">Flipkart Track Orders</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/helpcentre/manageOrder/i/3?otracker=undefined_footer_footer">Flipkart Manage Orders</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/helpcentre/returnOrder/i/4?otracker=undefined_footer_footer">Flipkart Return Orders</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/the-gift-card-store?otracker=undefined_footer_footer">Flipkart Gift Cards Store</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/flipkart-axis-bank-credit-card-store?otracker=undefined_footer_footer">Flipkart Axis Bank Credit Card</a></button>
+        <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" aria-disabled="true" href="/flipkart-pay-later-store?otracker=undefined_footer_footer">Flipkart Pay Later</a></button>
+      </div>
+      </div><div><span style:"font-size:14px;">Mobiles:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-12-white-64-gb/p/itm8b88bdc03cd79?otracker=undefined_footer_footer">iPhone 12 64GB</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-12-pro-graphite-512-gb/p/itmdf0ffb4f2150f?otracker=undefined_footer_footer">iPhone 12 Pro 512GB</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-12-blue-128-gb/p/itm02853ae92e90a?otracker=undefined_footer_footer">iPhone 12 128GB</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-y91i-fusion-black-32-gb/p/itmff6vsadyrbauf?otracker=undefined_footer_footer">Vivo Y91i</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-y11-mineral-blue-32-gb/p/itmb764fb6d6ef60?otracker=undefined_footer_footer">Vivo Y11</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-y15-aqua-blue-64-gb/p/itmfgadf77s87w8x?otracker=undefined_footer_footer">Vivo Y15</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/nothing-phone-1-black-128-gb/p/itmeea53a564de47?otracker=undefined_footer_footer">Nothing Phone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-y50-pearl-white-128-gb/p/itmd0dcc06ffbe06?otracker=undefined_footer_footer">Vivo Y50</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-y12-burgundy-red-64-gb/p/itmfhyjvucp5mueg?otracker=undefined_footer_footer">Vivo Y12</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/oppo-reno2-f-lake-green-256-gb/p/itm8413e7eb0b195?otracker=undefined_footer_footer">Reno2 F</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/oppo-a12-blue-32-gb/p/itmfc859cdf39e01?otracker=undefined_footer_footer">Oppo A12</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/nothing-phone-5g?otracker=undefined_footer_footer">Nothing Phone 5g</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/google-pixel-5g-phone?otracker=undefined_footer_footer">Google Pixel 5g Phone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/motorola-5g-phone?otracker=undefined_footer_footer">Motorola 5g Phone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/realme-5g-smartphone?otracker=undefined_footer_footer">Realme 5g Smartphone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/apple-5g-phone?otracker=undefined_footer_footer">Apple 5g Phone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/iqoo-5g-phones?otracker=undefined_footer_footer">Iqoo 5g Phones</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/oneplus-5g-phones?otracker=undefined_footer_footer">Oneplus 5g Phones</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/vivo-5g-phones?otracker=undefined_footer_footer">Vivo 5g Phones</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/oppo-5g-smart-phones?otracker=undefined_footer_footer">Oppo 5g Smart Phones</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/oppo-f15-blazing-blue-128-gb/p/itm56d35565691ea?otracker=undefined_footer_footer">Oppo F15</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/oppo-a31-fantasy-white-64-gb/p/itm82e19f459118a?otracker=undefined_footer_footer">Oppo A31</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/samsung-galaxy-a71-prism-crush-blue-128-gb/p/itmb719fd01880e3?otracker=undefined_footer_footer">Samsung A71</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/samsung-galaxy-a51-prism-crush-blue-128-gb/p/itme8079f0fedb33?otracker=undefined_footer_footer">Samsung A51</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/samsung-galaxy-a31-prism-crush-white-128-gb/p/itma110137399bdc?otracker=undefined_footer_footer">Samsung A31</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/realme-x2-pearl-green-64-gb/p/itm75023903eb431?otracker=undefined_footer_footer">Realme X2</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-11-white-64-gb/p/itm2644c3764fc54?otracker=undefined_footer_footer">iPhone  11</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-11-pro-space-grey-64-gb/p/itm7e24c1c560208?otracker=undefined_footer_footer">iPhone  11 Pro</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mobile-accessories/cases-and-covers/pr?sid=tyy,4mr,q2u&amp;otracker=undefined_footer_footer">Mobile Cover</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mobile-phone-offers-store?otracker=undefined_footer_footer">Mobile Offers</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-iphone-x-space-gray-64-gb/p/itmexrgv6hctyrav?otracker=undefined_footer_footer">iphone x</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/4g-mobile-phones-store?otracker=undefined_footer_footer">4G Mobile</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/nokia-mobile-phones-store?otracker=undefined_footer_footer">Nokia Mobile</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/samsung-mobile-store?otracker=undefined_footer_footer">Samsung Mobile</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mobiles/apple~brand/pr?sid=tyy,4io&amp;otracker=undefined_footer_footer">iphone</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/oppo-mobile-phones-store?otracker=undefined_footer_footer">Oppo Mobile</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vivo-mobile-phones-store?otracker=undefined_footer_footer">Vivo Mobile</a></button></div><div><span style:"font-size:14px;">Camera:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/gopro-hero-sports-action-camera/p/itmf3s4abpfgawhc?otracker=undefined_footer_footer">GoPro Action Camera</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/cameras/nikon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer_footer">Nikon Camera</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/cameras/canon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer_footer">Canon Camera</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/sony-cameras?otracker=undefined_footer_footer">Sony Camera</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/canon-dslr-cameras?otracker=undefined_footer_footer">Canon DSLR</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/cameras/dslr-mirrorless/nikon~brand/pr?sid=jek,p31,trv&amp;otracker=undefined_footer_footer">Nikon DSLR</a></button></div><div><span style:"font-size:14px;">Laptops:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/avita-liber-core-i7-10th-gen-16-gb-1-tb-ssd-windows-10-home-ns14a8inr671-pag-thin-light-laptop/p/itmbe8a49652ca6f?pid=COMGQKQ7GGNFR8N4&amp;otracker=undefined_footer_footer">Asus ROG Ally</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/apple-2022-macbook-pro-m2-8-gb-256-gb-ssd-mac-os-monterey-mneh3hn-a/p/itmaea892f7dd66e?otracker=undefined_footer_footer">MacBook Pro M2</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/premium-laptops?otracker=undefined_footer_footer">Premium Laptop</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="asus-rog-strix-scar-16-2023-core-i9-13th-gen-32-gb-1-tb-ssd-windows-11-home-12-gb-graphics-nvidia-geforce-rtx-4080-g634jz-n4062ws-gaming-laptop/p/itma62818795454d?otracker=undefined_footer_footer">ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/asus-rog-zephyrus-m16-2023-core-i9-13th-gen-32-gb-2-tb-ssd-windows-11-home-16-gb-graphics-nvidia-geforce-rtx-4090-gu604vy-nm058ws-gaming-laptop/p/itm7ad23e5445edf?otracker=undefined_footer_footer">ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/asus-zenbook-14-oled-2022-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-ux3402za-km531ws-thin-light-laptop/p/itm92e2e0518b654?otracker=undefined_footer_footer">ASUS Zenbook 14 OLED (2022)</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/realme-book-prime-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-cloudpro002-thin-light-laptop/p/itm7d1b1a9d3579b?otracker=undefined_footer_footer">Realme Book Prime Core i5 11th Gen</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/microsoft-surface-go-pentium-gold-8-gb-128-gb-ssd-windows-10-home-s-mode-1824-2-1-laptop/p/itmfb6pyjzy9y8n4?otracker=undefined_footer_footer">Microsoft Surface Go Pentium 128GB</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops-store?otracker=undefined_footer_footer">Branded Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/apple~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">Apple Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/acer~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">Acer Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/lenovo~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">Lenovo Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/dell~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">Dell Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/asus~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">Asus Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/hp~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">HP Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/gaming/gaming-laptops/pr?sid=4rr,tz1&amp;otracker=undefined_footer_footer">Gaming Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops/~2-in-1-laptops/pr?sid=6bo,b5g&amp;otracker=undefined_footer_footer">2 in 1 Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptops-store?otracker=undefined_footer_footer">Laptops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/dell-latest-laptops-2022?otracker=undefined_footer_footer">Dell latest laptops 2022</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/hp-latest-laptops-2022?otracker=undefined_footer_footer">HP latest laptops 2022</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined_footer_footer">Infinix INBook Y1 Plus</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined_footer_footer">SAMSUNG Galaxy Book3</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/12th-gen-intel-core-laptops?otracker=undefined_footer_footer">12th Gen Intel Core Laptops</a></button></div><div><span style:"font-size:14px;">TVs:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/nokia~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Nokia TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/panasonic~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Panasonic TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/thomson~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Thomson TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mi-x-pro-108-cm-43-inch-ultra-hd-4k-led-smart-google-tv-dolby-atmos-vision-iq/p/itmccb958ce6c75e?otracker=undefined_footer_footer">Mi X Pro</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/realme~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Realme TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/motorola~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Motorola TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/oneplus~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">OnePlus TVs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/lg~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">LG TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/television-store?otracker=undefined_footer_footer">TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/sony~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Sony TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/samsung~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Samsung TV</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/android-tv-store?otracker=undefined_footer_footer">Android Television</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/iffalcon~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Iffalcon Tv</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/televisions/mi~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer_footer">Mi TV</a></button></div><div><span style:"font-size:14px;">Large Appliances:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/tv-and-appliances-big-end-of-season-sale-store?otracker=undefined_footer_footer">TV &amp; Appliances End of Season Sale</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/television-store?otracker=undefined_footer_footer">Television</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/washing-machines/pr?sid=j9e,abm,8qx&amp;otracker=undefined_footer_footer">Washing Machines</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/refrigerators/pr?sid=j9e,abm,hzg&amp;otracker=undefined_footer_footer">Refrigerators</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/air-conditioners/pr?sid=j9e,abm,c54&amp;otracker=undefined_footer_footer">Air Conditioners</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/electric-cookers/pr?sid=j9e,m38,9m9&amp;otracker=undefined_footer_footer">Electric Cookers</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/electric-jugheatertravel-kettles/pr?sid=j9e,m38,xrv&amp;otracker=undefined_footer_footer">Electric Jug(Heater) / Travel Kettles</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/induction-cooktops/pr?sid=j9e,m38,575&amp;otracker=undefined_footer_footer">Induction Cooktops</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/inverters/pr?sid=j9e,abm,7no&amp;otracker=undefined_footer_footer">Inverters / stabilizer</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/iron/pr?sid=j9e,abm,a0u&amp;otracker=undefined_footer_footer">Irons / Iron Box</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mixerjuicergrinders/pr?sid=j9e,m38,7ek&amp;otracker=undefined_footer_footer">Mixer Grinder Juicer</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/wet-grinders/pr?sid=j9e,m38,htd&amp;otracker=undefined_footer_footer">Wet Grinders</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/chimney/pr?sid=j9e,m38,tgz&amp;otracker=undefined_footer_footer">Chimneys</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/microwave-ovens/pr?sid=j9e,m38,o49&amp;otracker=undefined_footer_footer">Microwave Ovens</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/vacuum-cleaners/pr?sid=j9e,abm,ul2&amp;otracker=undefined_footer_footer">Vacuum Cleaners</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/water-purifiers/pr?sid=j9e,abm,i45&amp;otracker=undefined_footer_footer">Water Purifier</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/fans/pr?sid=j9e,abm,lbz&amp;otracker=undefined_footer_footer">Fan</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/marq-main-store?otracker=undefined_footer_footer">MarQ Customer Care</a></button></div><div><span style:"font-size:14px;">Clothing:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/green-bridal-lehenga?otracker=undefined_footer_footer">Green bridal lehenga</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/bridal-blouse?otracker=undefined_footer_footer">Bridal Blouse</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/half-saree-blouse-designs?otracker=undefined_footer_footer">Half saree blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/designer-blouses?otracker=undefined_footer_footer">Designer blouses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/blouse-designs?otracker=undefined_footer_footer">Blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-shirts/pr?sid=clo%2Cash%2Caxc%2Cmmk&amp;otracker=undefined_footer_footer">Men Shirts</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/plain-suit-with-heavy-dupatta?otracker=undefined_footer_footer">Plain suit with heavy dupatta</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/half-saree-for-kids?otracker=undefined_footer_footer">Half saree for kids</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/cotton-saree-blouse-designs?otracker=undefined_footer_footer">Cotton saree blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-ethnic-sets/kurta-and-pyjama-set~type/pr?sid=clo%2Ccfv%2Citg%2Cpme&amp;otracker=undefined_footer_footer">Kurta Pajama</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-tshirts/pr?sid=clo%2Cash%2Cank%2Cedy&amp;otracker=undefined_footer_footer">Men T-Shirts</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/new-blouse-design?otracker=undefined_footer_footer">New blouse design</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-jeans/pr?sid=clo%2Cvua%2Ck58%2Ci51&amp;otracker=undefined_footer_footer">Jeans</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/bridal-designer-blouse?otracker=undefined_footer_footer">Bridal designer blouse</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/simple-aari-work-blouse-designs?otracker=undefined_footer_footer">Simple aari work blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/bridal-banarasi-sarees?otracker=undefined_footer_footer">Bridal banarasi sarees</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/sarees?otracker=undefined_footer_footer">Saree</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/high-waist-panties?otracker=undefined_footer_footer">High waist panties</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/hooded-jacket-women?otracker=undefined_footer_footer">Hooded jacket women</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-dresses/pr?sid=clo%2Codx%2Cmaj%2Cjhy&amp;otracker=undefined_footer_footer">Dresses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/hoodie-t-shirts-for-men?otracker=undefined_footer_footer">Hoodie tshirts for men</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/one-pieces?otracker=undefined_footer_footer">One pieces</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/hip-hop-cap-for-men?otracker=undefined_footer_footer">Hip hop cap for men</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/groom-wedding-sherwani?otracker=undefined_footer_footer">Groom wedding sherwani</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/designer-salwar-suits?otracker=undefined_footer_footer">Designer Salwar Suits</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/bras/pr?sid=clo%2Cqfl%2Cv5v%2Ckzg&amp;otracker=undefined_footer_footer">Bra</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/aari-work-blouse-hand-designs?otracker=undefined_footer_footer">Aari work blouse hand designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/cotton-simple-blouse-designs?otracker=undefined_footer_footer">Cotton simple blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/banarasi-saree-blouse-designs?otracker=undefined_footer_footer">Banarasi saree blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/designer-kurtis?otracker=undefined_footer_footer">Designer Kurtis</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/stylish-blouse-astin-design?otracker=undefined_footer_footer">Stylish blouse astin design</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-track-pants/pr?sid=clo%2Cvua%2Cjlk%2C6ql&amp;otracker=undefined_footer_footer">Track Pant</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/blouse-neck-designs?otracker=undefined_footer_footer">Blouse neck designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/men-kurtas?otracker=undefined_footer_footer">Men Kurtas</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/v-neck-blouse-designs?otracker=undefined_footer_footer">V neck blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/womens-gym-wear?otracker=undefined_footer_footer">Gym Wear</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-dresses/party~occasion/pr?sid=clo%2Codx%2Cmaj%2Cjhy&amp;otracker=undefined_footer_footer">Party Dresses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-ethnic-sets/kurta-and-palazzo-set~type/pr?sid=clo%2Ccfv%2Citg%2Ctys&amp;otracker=undefined_footer_footer">Palazzo Suits</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/boys-clothing?otracker=undefined_footer_footer">Boys Clothing</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/clothing-and-accessories/winter-wear/gloves/mens-gloves/pr?sid=clo%2Cqvw%2Ctog%2Cjvu&amp;otracker=undefined_footer_footer">Gloves</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-night-dresses-and-nighties/pr?sid=clo%2C1hc%2Ckc4%2Cnmu&amp;otracker=undefined_footer_footer">Nighty</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-dresses/maxi~type/pr?sid=clo%2Codx%2Cmaj%2Cjhy&amp;otracker=undefined_footer_footer">Maxi Dresses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/anarkali?otracker=undefined_footer_footer">Anarkali</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-gowns/pr?sid=clo%2Codx%2Cod7%2C0xx&amp;otracker=undefined_footer_footer">Gowns</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/culottes?otracker=undefined_footer_footer">Culottes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/salwar-suit?otracker=undefined_footer_footer">Salwar Suits</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-kurtas-kurtis/pr?sid=clo%2Ccfv%2Ccib%2Crkt&amp;otracker=undefined_footer_footer">Kurtis</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/designer-sarees?otracker=undefined_footer_footer">Designer Sarees</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/leggings?otracker=undefined_footer_footer">Leggings</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-shorts/pr?sid=clo%2Cvua%2Ce8g%2Ckc7&amp;otracker=undefined_footer_footer">Shorts</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/georgette-sarees?otracker=undefined_footer_footer">Georgette Sarees</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/ethnic-wear?otracker=undefined_footer_footer">Ethnic Wear</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-briefs-and-trunks/pr?sid=clo%2Cqfl%2Cszr%2C3xl&amp;otracker=undefined_footer_footer">Briefs &amp; Trunks</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/nike-watches?otracker=undefined_footer_footer">Nike Watches</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/women-henley?otracker=undefined_footer_footer">Women henley</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/uppada-pattu-sarees?otracker=undefined_footer_footer">uppada pattu sarees</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/blouse-back-design?otracker=undefined_footer_footer">Blouse back design</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/leopard-dresses?otracker=undefined_footer_footer">Leopard dresses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/sleeveless-shrugs?otracker=undefined_footer_footer">Sleeveless shrugs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/latest-blouse-designs?otracker=undefined_footer_footer">Latest blouse designs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/simple-blouse-designs?otracker=undefined_footer_footer">Simple Blouse designs</a></button></div><div><span style:"font-size:14px;">Footwear:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-shoes-store?otracker=undefined_footer_footer">Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/sports-shoes/adidas~brand/pr?sid=osp,cil,1cu&amp;otracker=undefined_footer_footer">Adidas Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/reebok~brand/pr?sid=osp,cil&amp;otracker=undefined_footer_footer">Reebok Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/nike~brand/pr?sid=osp,cil&amp;otracker=undefined_footer_footer">Nike Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/puma~brand/pr?sid=osp,cil&amp;otracker=undefined_footer_footer">Puma Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/casual-shoes/boots~type/pr?sid=osp,cil,e1f&amp;otracker=undefined_footer_footer">Boots</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/bata-shoes?otracker=undefined_footer_footer">Bata Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/woodland-shoes?otracker=undefined_footer_footer">Woodland Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/skechers~brand/pr?sid=osp,cil&amp;otracker=undefined_footer_footer">Skechers Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/casual-shoes/sneakers~type/pr?sid=osp%2Ccil%2Ce1f&amp;otracker=undefined_footer_footer">Sneakers</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-footwear/boots/pr?sid=osp,iko,xgp&amp;otracker=undefined_footer_footer">Womens Boots</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer_footer">Sports Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/casual-shoes/loafers~type/pr?sid=osp%2Ccil%2Ce1f&amp;otracker=undefined_footer_footer">Loafers</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/sandals-floaters/pr?sid=osp%2Ccil%2Ce83&amp;otracker=undefined_footer_footer">Sandals</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/sports-shoes/lotto~brand/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer_footer">Lotto Sports Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/casual-shoes/pr?sid=osp,cil,e1f&amp;otracker=undefined_footer_footer">Casual Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/womens-footwear/skechers~brand/pr?sid=osp,iko&amp;otracker=undefined_footer_footer">Womens Skechers Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/sports-shoes/asics~brand/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer_footer">Asics Sports Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/mens-footwear/formal-shoes/pr?sid=osp,cil,ssb&amp;otracker=undefined_footer_footer">Formal Shoes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/school-shoes?otracker=undefined_footer_footer">School Shoes</a></button></div><div><span style:"font-size:14px;">Groceries:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/redeem-flipkart-grocery-coupon-voucher-phonepe-store?marketplace=GROCERY&amp;otracker=undefined_footer_footer">PhonePe Grocery Voucher</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/personal-baby-care/soaps-body-wash/hand-wash/pr?sid=73z%2Cnjl%2Csn6%2C6vr&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Hand Wash</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/personal-baby-care/soaps-body-wash/soaps/pr?sid=73z%2Cnjl%2Csn6%2Cr6y&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Soap</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/dry-fruits-nuts-seeds/cashew-nuts/pr?sid=73z%2Cbpe%2Cdtp%2Cghn&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Cashew Nuts</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/ghee-oils/sunflower-oil/pr?sid=73z,bpe,4wu,4vo&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Sunflower Oil</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/dairy-eggs/eggs/pr?sid=73z%2Cesa%2Chh7&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Eggs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/household-care/floor-other-cleaners/toilet-cleaners/pr?sid=73z,cwl,u3c,ijq&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Toilet Cleaner</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/household-care/floor-other-cleaners/toilet-cleaners/harpic~brand/pr?sid=73z%2Ccwl%2Cu3c%2Cijq&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Harpic Toilet Cleaner</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/personal-baby-care/soaps-body-wash/soaps/dettol~brand/pr?sid=73z,njl,sn6,r6y&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Dettol Soap</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/ghee-oils/mustard-oil/pr?sid=73z%2Cbpe%2C4wu%2Ctmu&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Mustard Oil</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/snacks-beverages/biscuits/pr?sid=73z%2Cujs%2Ceb9&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Biscuits</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/dairy-eggs/dairy/cheese/pr?sid=73z%2Cesa%2Cdt6%2C4ku&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Cheese</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/atta-flours/wheat-atta/patanjali~brand/pr?sid=73z%2Cbpe%2C9da%2C1fd&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Patanjali Atta</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/ghee-oils/sunflower-oil/fortune~brand/pr?sid=73z,bpe,4wu,4vo&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Fortune Oil</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/staples/atta-flours/wheat-atta/aashirvaad~brand/pr?sid=73z%2Cbpe%2C9da%2C1fd&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Aashirvaad Atta</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/grocery/snacks-beverages/tea/pr?sid=73z%2Cujs%2Camr&amp;marketplace=GROCERY&amp;otracker=undefined_footer_footer">Tea</a></button></div><div><span style:"font-size:14px;">Best Selling on Flipkart:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/fire-boltt-ninja-calling-pro-bluetooth-smartwatch-1-69-inch-hd-display/p/itmdf55f3ccff677?otracker=undefined_footer_footer">Fire-Boltt Ninja Calling Pro Bluetooth Calling Smartwatch 1.69 inch HD Display Smartwatch</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/best-gas-geyser?otracker=undefined_footer_footer">Best Gas Geyser</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/kitchen-geyser?otracker=undefined_footer_footer">Kitchen Geyser</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/nutri-blenders?otracker=undefined_footer_footer">Nutri Blenders</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/portable-air-cooler?otracker=undefined_footer_footer">Portable Air Cooler</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/best-air-cooler?otracker=undefined_footer_footer">Best Air Cooler</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/bags-online-store?otracker=undefined_footer_footer">Bags</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/hitachi-refrigerator-3-door?otracker=undefined_footer_footer">Hitachi Refrigerator 3 Door</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/books-store?otracker=undefined_footer_footer">Books</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/toys-online-store?otracker=undefined_footer_footer">Toys</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/home-decor/diyas-candles-holders/candles/pr?sid=arb,mvm,p0s&amp;otracker=undefined_footer_footer">Candles</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/automotive/car-bike-accessories/helmets-riding-gear/helmets-locks/helmets/pr?sid=0hx,bwd,bgt,c0x,wnn&amp;otracker=undefined_footer_footer">Helmets</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/home-decor/clocks/wall-clocks/pr?sid=arb,kjw,bm1&amp;otracker=undefined_footer_footer">Wall Clocks</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/baby-care/baby-food/pr?sid=kyh,arw&amp;otracker=undefined_footer_footer">Baby Food</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/food-nutrition/confectioneries-sweets/chocolates/pr?sid=7jv,iyp,s4n&amp;otracker=undefined_footer_footer">Chocolates</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/sports/cycling/cycles/pr?sid=abc,ulv,ixt&amp;otracker=undefined_footer_footer">Cycles</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/pens-stationery/calculators/pr?sid=dgv,qtq&amp;otracker=undefined_footer_footer">Calculators</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/beauty-and-grooming/makeup/lips/lipstick/pr?sid=g9b,ffi,tv5,una&amp;otracker=undefined_footer_footer">Lipsticks</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/health-care/home-medical-supplies/health-monitors/pollution-masks/pr?sid=hlc%2C20m%2Cled%2Cdew&amp;otracker=undefined_footer_footer">Mask</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/laptop-accessories/ups/pr?sid=6bo%2Cai3%2Cpi1&amp;otracker=undefined_footer_footer">Vertiv UPS</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/watches/fastrack~brand/pr?sid=r18&amp;otracker=undefined_footer_footer">Fastrack Watches</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/bags-wallets-belts/wallets-clutches/wallets/pr?sid=reh%2Ccca%2Ch76&amp;otracker=undefined_footer_footer">Wallets</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/earrings/pr?sid=mcr,96v,k9d&amp;otracker=undefined_footer_footer">Earrings</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/jewellery/~gold-coins/pr?sid=mcr&amp;otracker=undefined_footer_footer">Gold Coins</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/realme-pad-mini-3-gb-ram-32-rom-8-68-inch-4g-tablet-grey/p/itmdb6b41e4b36ef?otracker=undefined_footer_footer">Realme Pad Mini</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/handbags/pr?sid=reh,ihu,m08&amp;otracker=undefined_footer_footer">Handbags</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/conekt-sw2-smartwatch/p/itmaa5781a80aec1?otracker=undefined_footer_footer">conekt SW2 Smartwatch</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/mivi-duopods-a350?otracker=undefined_footer_footer">Mivi DuoPods a350</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/mobile-speaker-cleaner?otracker=undefined_footer_footer">Speaker Cleaner</a></button></div><div><span style:"font-size:14px;">Furniture:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture-store?otracker=undefined_footer_footer">Furniture</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">Sofas</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/beds/pr?sid=wwe,7p7&amp;otracker=undefined_footer_footer">Beds</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/dining-tables-sets/pr?sid=wwe,ur9&amp;otracker=undefined_footer_footer">Dining sets</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/wardrobes/pr?sid=wwe,fc3&amp;otracker=undefined_footer_footer">Wardrobes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/mattresses/pr?sid=wwe,rg9&amp;otracker=undefined_footer_footer">Mattresses</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/tv-units-cabinets/pr?sid=wwe,243&amp;otracker=undefined_footer_footer">TV Units</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/tables/pr?sid=wwe,ki7&amp;otracker=undefined_footer_footer">Tables</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/chairs/pr?sid=wwe,y7b&amp;otracker=undefined_footer_footer">Chairs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/shelves/pr?sid=wwe,vmc&amp;otracker=undefined_footer_footer">Shelves</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/bean-bags/pr?sid=wwe,4n6&amp;otracker=undefined_footer_footer">Bean Bags</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/chairs/office-study-chairs/pr?sid=wwe,y7b,foc&amp;otracker=undefined_footer_footer">Office Chairs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/computer-tables?otracker=undefined_footer_footer">Computer Table</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/tables/office-study-table/pr?sid=wwe,ki7,l1t&amp;otracker=undefined_footer_footer">Office Tables</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/red~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">Red Sofa</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/beds/beds/wakefit~brand/pr?sid=wwe,7p7,4yf&amp;otracker=undefined_footer_footer">Wakefit Beds</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/white~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">White Sofa</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/mattresses/wakefit~brand/pr?sid=wwe%2Crg9&amp;otracker=undefined_footer_footer">Wakefit Mattress</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/green~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">Green Sofa</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/black~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">Black Sofa</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/furniture/sofas/sofa-sets/brown~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer_footer">Brown Sofa</a></button></div><div><span style:"font-size:14px;">BGMH:</span>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/health-care/health-supplements/protein-supplement/whey-protein~type/pr?sid=hlc%2Cetg%2C1rx&amp;otracker=undefined_footer_footer">Whey Protein</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="https://www.flipkart.com/health-care/home-medicines/general-wellness/homeopathy/pr?sid=hlc%2Cah4%2Ciav%2Craa&amp;otracker=undefined_footer_footer">Homeopathy</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/sports/cricket/pr?sid=abc,5lf&amp;otracker=undefined_footer_footer">Cricket</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/sports/cycling/cycles/pr?sid=abc,ulv,ixt&amp;otracker=undefined_footer_footer">Cycles</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/sports/football/footballs/pr?sid=abc%2Cgxg%2Ceha&amp;otracker=undefined_footer_footer">Footballs</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/exercise-fitness/fitness-equipment/treadmills/pr?sid=qoc,amf,oyq&amp;otracker=undefined_footer_footer">Treadmills</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/christmas-gift?otracker=undefined_footer_footer">Christmas Gifts</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/exercise-fitness/fitness-accessories/pr?sid=qoc,acb&amp;otracker=undefined_footer_footer">Fitness Accessories</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/online-guitar?otracker=undefined_footer_footer">Online Guitar</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/books-store?otracker=undefined_footer_footer">Books Store</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/musical-instruments-store?otracker=undefined_footer_footer">Musical Instrument Store</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/dabur-chyawanprash?otracker=undefined_footer_footer">Dabur Chyawanprash</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/baidyanath-chyawanprash?otracker=undefined_footer_footer">Baidyanath Chyawanprash</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/health-care/health-supplements/energy-drinks/pr?sid=hlc,etg,2yn&amp;otracker=undefined_footer_footer">Energy Drinks</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/toys-online-store?otracker=undefined_footer_footer">Toys</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/health-care/health-supplements/milk-drink-mixes/pr?sid=hlc,etg,sxm&amp;otracker=undefined_footer_footer">Milk Drink Mixes</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/rakhi?otracker=undefined_footer_footer">Rakhi</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/q/chyawanprash?otracker=undefined_footer_footer">Chyawanprash</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/home-decor/showpieces-decor-accents/flags/pr?sid=arb%2Cuj2%2Cuvt&amp;otracker=undefined_footer_footer">Indian Flag</a></button>
+      <a a class="rounded-pill border border-dark disabled px-1 mx-1" style="font-size: 12px;" href="/health-care/health-supplements/protein-supplement/pr?sid=hlc,etg,1rx&amp;otracker=undefined_footer_footer">Protein Supplements</a></button></div></div>
+      <br><br><br>
+    <div class=" container-fluid px-5 text-muted center" style="line-height: 18px;">
+      <div class="text-start">
+        <b><span style="font-size: 16px"> Flipkart: The One-stop Shopping Destination</span></b><br><span style="font-size: 10px;">
+            E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+            <br><br>
+            What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Flipkart Plus</span></b><br><span style="font-size: 10px;">
+            A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!
+            <br><br>
+            What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+            An annual Zomato Gold membership
+            An annual Hotstar Premium membership
+            6 months Gaana plus subscription
+            Rupees 550 instant discount on flights on ixigo
+            Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</span>
+            <br><br>
+            <b><span style="font-size: 14px">No Cost EMI</span></b><br><span style="font-size: 10px;">
+            In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</span>
+            <br><br>
+            <b><span style="font-size: 14px">EMI on Debit Cards</span></b><br><span style="font-size: 10px;">
+            Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Mobile Exchange Offers</span></b><br><span style="font-size: 10px;">
+            Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</span>
+            <br><br>
+            <b><span style="font-size: 14px">What Can You Buy From Flipkart?
+            Mobile Phones</span></b><br><span style="font-size: 10px;">
+            From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Electronic Devices and Accessories</span></b><br><span style="font-size: 10px;">
+            When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+            <br><br>
+            Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+            <br><br>
+            Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+            <br><br>
+            How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Large Appliances</span></b><br><span style="font-size: 10px;">
+            Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.
+            <br><br>
+            For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to Purchases.oni@flipkart.com.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Small Home Appliances</span></b><br><span style="font-size: 10px;">
+            Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Lifestyle</span></b><br><span style="font-size: 10px;">
+            Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Home and Furniture</span></b><br><span style="font-size: 10px;">
+            Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
+            <br><br>
+            You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Baby and Kids</span></b><br><span style="font-size: 10px;">
+            Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Books, Sports and Games</span></b><br><span style="font-size: 10px;">
+            Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</span>
+            <br><br>
+            <b><span style="font-size: 14px">Grocery/Supermart</span></b><br><span style="font-size: 10px;">
+            Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</p>
+    </div>
+  </div>
+
+
+  <div class="container-fluid text-start d-flex flex-column" style="color: gray; background-color: #172337;">
+    <br><br>
+    <div class="d-flex  justify-content-around" style= "font-size: 12px;" >
+       <div class="d-flex flex-column"> 
+            <p>ABOUT <br>
+              <div>
+              <a href="#" class="link-light">Contact Us</a><br>
+              <a href="#" class="link-light">About us</a><br>
+              <a href="#" class="link-light">Careers</a><br>
+              <a href="#" class="link-light">flipkart Stories</a><br>
+              <a href="#" class="link-light">Press</a><br>
+              <a href="#" class="link-light">flipkart Wholesale</a><br>
+              <a href="#" class="link-light">Corporate Information</a><br>
+            </div></p>
+           </div>
+
+          <div class="d-flex flex-column" >
+            <p >HELP</p>
+            <div >
+            <p>
+              <a href="#" class="link-light">Payments</a><br>
+              <a href="#" class="link-light">shipping</a><br>
+              <a href="#" class="link-light">Cancellation & Returns</a><br>
+              <a href="#" class="link-light">FAQ</a><br>
+              <a href="#" class="link-light">Report Infringement</a><br>
+            </p></div>
+          </div>
+
+          <div class="d-flex flex-column" >
+            <p>CONSUMER POLICY <br>
+              <div >
+              <a href="#" class="link-light">Return Policy</a><br>
+              <a href="#" class="link-light">Terms Of use</a><br>
+              <a href="#" class="link-light">Security</a><br>
+              <a href="#" class="link-light">Privcy</a><br>
+              <a href="#" class="link-light">Sitemap</a><br>
+              <a href="#" class="link-light">Grievance Redressal</a><br>
+              <a href="#" class="link-light">EPR Compliance</a><br>
+            </div></p>
+           </div>
+           <div class="d-flex flex-column" >
+            <p>SOCIAL <br>
+              <div >
+              <a href="#" class="link-light">Facebook</a><br>
+              <a href="#" class="link-light">Twitter</a><br>
+              <a href="#" class="link-light">Youtube</a><br>
+            </div></p>
+             </div>
+             <div class="vr"></div>
+           <div class="d-flex flex-column" >
+            <p>Mail Us:<br></p>
+              <div style="color: white;">
+                <p>
+              Flipkart Internet Private Limited,<br>
+              Buildings Alyssa, Begonia<br>
+               Clove Embassy Tech Village,<br>
+               Outer Ring Road, Devarabeesanahalli Village,<br>
+               Bengaluru, 560103,<br>
+               Karnataka, India<br>
+              </p></div>
+           </div>
+           <div class="d-flex flex-column" >
+            <p>Registered Office Address<br>
+              <div style="color: white;">
+              Flipkart Internet Private Limited,<br>
+              Buildings Alyssa, Begonia<br>
+               Clove Embassy Tech Village,<br>
+               Outer Ring Road, Devarabeesanahalli Village,<br>
+               Bengaluru, 560103,<br>
+               Karnataka, India<br>
+               CIN : U51109KA2012PTC066107 <br>
+               Telephone:45614700 <br>
+            </div></p>
+           </div>
+        </div>
+        <hr>
+    <div class="d-flex  justify-content-around" style="height: 55px;" >
+      <div > 
+        <img src="image\f (2).png"  height="18px" alt="1">
+         <a href="#" class="link-light">Become a Seller</a>
+        </div>
+        <div> 
+          <img src="image\f (3).png"  height="18px" alt="1">
+          <a href="#" class="link-light">Advertise</a>
+         </div>
+         <div> 
+          <img src="image\f (4).png"  height="18px" alt="1">
+          <a href="#" class="link-light">Gift Card</a>
+         </div>
+         <div> 
+          <img src="image\f (5).png"  height="18px" alt="1">
+          <a href="#" class="link-light">Help Center</a>
+         </div>
+        <div class="text-white">
+<p style="height: 10px;">© 2007-2023 Flipkart.com</p>
+        </div>
+        <div> 
+          <a href="#" class="link-light"><img src="image\f (8).png"  height="18px" alt="1">
+          </a>
+         </div>
+        <div>
+         
+        </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>

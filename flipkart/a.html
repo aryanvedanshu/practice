@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Infinite Scrolling Example with jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5" id="dataContainer">
+    <!-- Initial data -->
+    <div class="row" id="initialData">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image1.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">This is the content for Card 1.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more initial data here if needed -->
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function loadMoreData() {
+      // Simulate fetching new data from the server (you can use AJAX here to fetch real data)
+      // For demo purposes, let's generate random data
+      for (let i = 2; i <= 10; i++) {
+        const newData = `
+          <div class="col-md-4">
+            <div class="card">
+              <img src="image${i}.jpg" class="card-img-top" alt="Image ${i}">
+              <div class="card-body">
+                <h5 class="card-title">Card ${i}</h5>
+                <p class="card-text">This is the content for Card ${i}.</p>
+              </div>
+            </div>
+          </div>
+        `;
+        $('#dataContainer .row').append(newData);
+      }
+    }
+
+    // Check if the user has reached the bottom of the page and load more data
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() >= $(document).height() - 200) {
+        loadMoreData();
+      }
+    });
+  </script>
+</body>
+</html>
